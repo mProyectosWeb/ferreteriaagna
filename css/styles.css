@@ -11,8 +11,8 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
-    background: #E6E6E6;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #f5f2f296;
 }
 
 /** Estilos menu de navegación */
@@ -28,6 +28,9 @@ body{
     left: 0;
     width: 100%;
     height: 80px;
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.75); 
     background: var(--white);
     display: flex;
     justify-content: space-between;
@@ -76,6 +79,98 @@ body{
 }
 
 
+/** Contenido de la pagina */
+.contenido{
+    width: 80%;
+    height: 100%;
+    padding-top: 80px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido__empresa{
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.contenido__titulo{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+    font-weight:600;
+    color: #F27405;
+}
+
+.contenido__titulo-span{
+    font-weight: 900;
+    border-bottom: 3px solid var(--orange);
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+}
+
+.about__somos{
+    font-size: 45px;
+    border-bottom: 4px solid var(--orange);
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+.about__descripción{
+    width: 70%;
+}
+
+.about__texto{
+    font-size: 20px;
+    letter-spacing: 0.9px;
+    text-align: justify;
+    font-weight: normal;
+    color: #4e4c4c;
+    margin: 40px 0;
+}
+
+.about__span{
+    font-weight: bold;
+    color: #252850;
+}
+
+.about__logo{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.objetivo{
+    width: 70%;
+}
+
+.objetivo__titulo{
+    font-size: 30px;
+    color: #252850;
+    font-weight: 900;
+    letter-spacing: 0.7px;
+    margin: 20px 0;
+}
+
+.objetivo__descripción{
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
 
 
 
@@ -84,21 +179,11 @@ body{
 .footer{
     width: 100%;
     height: 100%;
-    margin-top: 50px;
     background: linear-gradient(rgba(242, 116, 5, 0.8), rgba(242, 116, 5, 0.8)), url(../images/img-1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    /* position: absolute; */
 }
-
-/* .footer::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: rgba(242, 116, 5, 0.8);
-    position: absolute;
-} */
 
 .footer__contenedor{
     width: 90%;
@@ -110,7 +195,6 @@ body{
 .footer__contacto{
     width: 100%;
     height: 100%;
-    /* margin: 40px auto; */
     padding-top: 120px;
 }
 
@@ -133,7 +217,6 @@ body{
     font-weight: normal;
     color: var(--white);
     text-align: justify;
-    /* border-bottom: 1px solid #fff; */
 }
 
 .footer__formulario{
@@ -242,10 +325,10 @@ body{
 
 
 .créditos{
-width: 100%;
-height: 100%;
-background: var(--white);
-display: flex;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    display: flex;
 }
 
 .redes{
@@ -273,6 +356,7 @@ display: flex;
 .fa-facebook-f{
     background: #1873EB;
     color: #fff;
+    padding: 13px 17px 13px 17px;
 }
 
 .fa-instagram{
