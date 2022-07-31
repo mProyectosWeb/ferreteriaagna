@@ -51,7 +51,7 @@ body{
 }
 
 .lists{
-    padding-right: 40px;
+    padding-right: 100px;
 }
 
 .lists__ul{
@@ -86,11 +86,13 @@ body{
 .menu__hamburguesa{
     font-size: 25px;
     color: #000;
-    margin-right: 30px;
     cursor: pointer;
     display: none;
     width: 48px;
     height: 48px;
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 20px;
 }
 
 /** Contenido de la pagina */
