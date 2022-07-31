@@ -486,6 +486,14 @@ input{
     .créditos__nombres{
         text-align: center;
     }
+
+    .footer__titulo{
+        width: 70%;
+    }
+
+    .footer__h2{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -524,8 +532,24 @@ input{
         height: 100%;
     }
 
+    .footer__titulo{
+        width: 70%;
+    }
+
+    .footer__h2{
+        width: 70%;
+    }
+
     .footer__h4{
         font-size: 18px;
+    }
+
+    .footer__titulo{
+        width: 70%;
+    }
+
+    .footer__h2{
+        width: 70%;
     }
 
     .footer__p{
