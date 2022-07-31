@@ -50,10 +50,6 @@ body{
     display: flex;
 }
 
-.lists{
-    padding-right: 100px;
-}
-
 .lists__ul{
     display: flex;
     list-style: none;
@@ -84,6 +80,7 @@ body{
 }
 
 .menu__hamburguesa{
+    margin-right: 50px;
     font-size: 25px;
     color: #000;
     cursor: pointer;
@@ -91,8 +88,14 @@ body{
     width: 48px;
     height: 48px;
     text-align: center;
-    padding-top: 5px;
-    padding-right: 20px;
+}
+
+input{
+    background: none;
+}
+
+.menu__hamburguesa:hover{
+    background: none;
 }
 
 /** Contenido de la pagina */
@@ -245,7 +248,7 @@ body{
 }
 
 .footer__titulo{
-    width: 50%;
+    width: 70%;
     margin: auto;
     border: 1px solid #fff;
 }
@@ -541,7 +544,8 @@ body{
         height: 80px;
     }
     .menu__hamburguesa{
-        margin-right: 0px;
+        margin-right: 20px;
+
     }
     .contenido__titulo{
         font-size: 22px;
@@ -581,6 +585,14 @@ body{
 
     .footer__p{
         font-size: 15px;
+    }
+
+    .footer__titulo{
+        width: 100%;
+    }
+
+    .footer__h2{
+        width: 100%;
     }
 
     .formulario__contenido{
