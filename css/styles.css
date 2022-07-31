@@ -470,6 +470,9 @@ body{
 }
 
 @media screen and (max-width: 550px) {
+    .menu__hamburguesa{
+        margin-right: 0px;
+    }
     .créditos{
         
         flex-direction: column;
@@ -481,6 +484,9 @@ body{
 }
 
 @media screen and (max-width:500px) {
+    .menu__hamburguesa{
+        margin-right: 0px;
+    }
     .contenido__titulo{
         font-size: 30px;
     }
@@ -501,6 +507,18 @@ body{
         font-size: 15px;
     }
 
+    .about__logo{
+        width: 300px;
+        height: 200px;
+        margin: 50px auto;
+        overflow: hidden;
+    }
+
+    .about__img{
+        width: 100%;
+        height: 100%;
+    }
+
     .footer__h4{
         font-size: 18px;
     }
@@ -513,4 +531,71 @@ body{
         font-size: 15px;
         padding-bottom: 20px;
     }
+}
+
+@media screen and (max-width:400px) {
+    .menu__imagen-logo{
+        width: 110px;
+        height: 80px;
+    }
+    .menu__hamburguesa{
+        margin-right: 0px;
+    }
+    .contenido__titulo{
+        font-size: 22px;
+    }
+
+    .about__somos{
+        font-size: 22px;
+    }
+
+    .about__texto{
+        font-size: 12px;
+    }
+
+    .objetivo__titulo{
+        font-size: 22px;
+    }
+
+    .objetivo__descripción{
+        font-size: 12px;
+    }
+
+    .about__logo{
+        width: 250px;
+        height: 150px;
+        margin: 50px auto;
+        overflow: hidden;
+    }
+
+    .about__img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer__h4{
+        font-size: 15px;
+    }
+
+    .footer__p{
+        font-size: 15px;
+    }
+
+    .formulario__contenido{
+        width: 100%;
+    }
+
+    .formulario__input{
+        width: 100%;
+    }
+
+    .formulario__textarea{
+        width: 100%;
+    }
+
+    .créditos__nombres{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
 }
