@@ -99,99 +99,6 @@ input{
 }
 
 /** Contenido de la pagina */
-.contenido{
-    width: 80%;
-    height: 100%;
-    padding-top: 80px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contenido__empresa{
-    width: 100%;
-    height: 150px;
-    background: rgba(0, 0, 0, 0.9);
-    display: flex;
-    align-items: center;
-    border-radius: 10px 10px 0 0;
-}
-
-.contenido__titulo{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    font-size: 35px;
-    font-weight:600;
-    color: #F27405;
-}
-
-.contenido__titulo-span{
-    font-weight: 900;
-    border-bottom: 3px solid var(--orange);
-}
-
-.about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background: var(--white);
-}
-
-.about__somos{
-    font-size: 45px;
-    border-bottom: 4px solid var(--orange);
-    font-weight: 900;
-    margin-top: 40px;
-}
-
-.about__descripción{
-    width: 70%;
-}
-
-.about__texto{
-    font-size: 20px;
-    letter-spacing: 0.9px;
-    text-align: justify;
-    font-weight: normal;
-    color: #4e4c4c;
-    margin: 40px 0;
-}
-
-.about__span{
-    font-weight: bold;
-    color: #252850;
-}
-
-.about__logo{
-    width: 70%;
-    height: 100%;
-    text-align: center;
-    margin: 50px 0;
-}
-
-.objetivo{
-    width: 70%;
-}
-
-.objetivo__titulo{
-    display: inline-block;
-    font-size: 30px;
-    color: #252850;
-    font-weight: 900;
-    letter-spacing: 0.7px;
-    margin: 20px 0;
-}
-
-.objetivo__descripción{
-    text-align: justify;
-    font-size: 20px;
-    margin-bottom: 50px;
-}
-
 
 
 /** Estilos del pie de pagina(Footer) */
@@ -450,18 +357,6 @@ input{
         background: none;
     }
 
-    .about__logo{
-        width: 350px;
-        height: 250px;
-        margin: 50px auto;
-        overflow: hidden;
-    }
-
-    .about__img{
-        width: 100%;
-        height: 100%;
-    }
-
     .footer__contenedor{
         flex-direction: column;
         width: 100%;
@@ -478,14 +373,6 @@ input{
     .menu__hamburguesa{
         margin-right: 0px;
     }
-    .créditos{
-        
-        flex-direction: column;
-    }
-
-    .créditos__nombres{
-        text-align: center;
-    }
 
     .footer__titulo{
         width: 70%;
@@ -494,44 +381,21 @@ input{
     .footer__h2{
         width: 70%;
     }
+
+    .créditos{
+        flex-direction: column;
+    }
+
+    .créditos__nombres{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:500px) {
     .menu__hamburguesa{
         margin-right: 0px;
     }
-    .contenido__titulo{
-        font-size: 30px;
-    }
-
-    .about__somos{
-        font-size: 30px;
-    }
-
-    .about__texto{
-        font-size: 15px;
-    }
-
-    .objetivo__titulo{
-        font-size: 30px;
-    }
-
-    .objetivo__descripción{
-        font-size: 15px;
-    }
-
-    .about__logo{
-        width: 300px;
-        height: 200px;
-        margin: 50px auto;
-        overflow: hidden;
-    }
-
-    .about__img{
-        width: 100%;
-        height: 100%;
-    }
-
+    
     .footer__titulo{
         width: 70%;
     }
@@ -571,38 +435,7 @@ input{
         margin-right: 20px;
 
     }
-    .contenido__titulo{
-        font-size: 22px;
-    }
-
-    .about__somos{
-        font-size: 22px;
-    }
-
-    .about__texto{
-        font-size: 12px;
-    }
-
-    .objetivo__titulo{
-        font-size: 22px;
-    }
-
-    .objetivo__descripción{
-        font-size: 12px;
-    }
-
-    .about__logo{
-        width: 250px;
-        height: 150px;
-        margin: 50px auto;
-        overflow: hidden;
-    }
-
-    .about__img{
-        width: 100%;
-        height: 100%;
-    }
-
+    
     .footer__h4{
         font-size: 15px;
     }
