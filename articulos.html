@@ -43,23 +43,140 @@
         <div class="información">
             <div class="información__contenido">
                 <h1 class="información__titulo">¡Descubre grandes descuentos!</h1>
-                <p class="información__p">Encuentra productos a precio de <span>Mayoreo + un 5% de descuento en todas tus compras.</span></p>
+                <p class="información__p">Encuentra productos a precio de <span>Mayoreo + 5% de descuento en todas tus compras.</span></p>
                 <a href="https://api.whatsapp.com/send/?phone=9631567144&text=Puedes%20realizar%20tus%20cotizaciones%20haciendo%20click%20en%20continuar%20al%20chat" class="información__a">Enviar mensaje</a>
             </div>
         </div>
 
         <div class="contenedor">
+
+            <input type="radio" id="TODOS" name="categories" value="TODOS" class="contenedor__input" checked>
+            <input type="radio" id="CALENTADORES" name="categories" value="CALENTADORES" class="contenedor__input">
+            <input type="radio" id="BOMBAS" name="categories" value="BOMBAS" class="contenedor__input">
+            <div class="contenedor__categorías">
+                <label for="TODOS" class="contenedor__label">TODOS</label>
+                <label for="CALENTADORES" class="contenedor__label">Calentadores</label>
+                <label for="BOMBAS" class="contenedor__label">Bombas</label>
+            </div>
+
+
+
             <div class="artículos">
 
-                <article class="article">
+                <article class="article" data-category="CALENTADORES">
                     <div class="article__img">
-                        <img src="./images/calentador-8-tubos.jpg" alt="" class="article__img-dimensión">
+                        <img src="./images/Calentadores/calentador-8-tubos.jpg" alt="" class="article__img-dimensión">
                     </div>
                     <h2 class="article__h2">Calentador solar de agua de 8 tubos 92 L, 2 personas, Foset</h2>
                     <span class="article__span">Código: 45274 Clave: CALE-8S</span>
                     <ul class="article__list">
-                        <li class="lists__li">Precio Publico: <span class="lists__tachado">$00.00</span></li>
-                        <li class="lists__li">Precio Mayoreo: $00.00 <sup>-5%</sup> </li>
+                        <li class="lists__li">Precio Publico: <span class="lists__tachado">$6,650.00</span></li>
+                        <li class="lists__li">Precio Mayoreo: $5,650.00 <sup>-5%</sup> </li>
+                    </ul>
+                    <div class="article__enlace">
+                        <a href="#" class="article__a">Leer mas...</a>
+                    </div>
+                </article>
+
+                <article class="article" data-category="BOMBAS">
+                    <div class="article__img">
+                        <img src="./images/BombasAgua/100433.jpg" alt="" class="article__img-dimensión">
+                    </div>
+                    <h2 class="article__h2"> Bomba centrífuga para agua, 1 HP, Truper Expert</h2>
+                    <span class="article__span">Código: 100433 Clave: BOAC-1AX</span>
+                    <ul class="article__list">
+                        <li class="lists__li">Precio Publico: <span class="lists__tachado">$2,315.00</span></li>
+                        <li class="lists__li">Precio Mayoreo: $1,750.00 <sup>-5%</sup> </li>
+                    </ul>
+                    <div class="article__enlace">
+                        <a href="#" class="article__a">Leer mas...</a>
+                    </div>
+                </article>
+
+                <article class="article" data-category="CALENTADORES">
+                    <div class="article__img">
+                        <img src="./images/Calentadores/45270.jpg" alt="" class="article__img-dimensión">
+                    </div>
+                    <h2 class="article__h2">Calentador solar de agua de 10 tubos 130 L, 3 personas</h2>
+                    <span class="article__span"> Código: 45270 Clave: CALE-10S</span>
+                    <ul class="article__list">
+                        <li class="lists__li">Precio Publico: <span class="lists__tachado">$8,450.00</span></li>
+                        <li class="lists__li">Precio Mayoreo: $7,250.00 <sup>-5%</sup> </li>
+                    </ul>
+                    <div class="article__enlace">
+                        <a href="#" class="article__a">Leer mas...</a>
+                    </div>
+                </article>
+
+                <article class="article" data-category="CALENTADORES">
+                    <div class="article__img">
+                        <img src="./images/Calentadores/45270.jpg" alt="" class="article__img-dimensión">
+                    </div>
+                    <h2 class="article__h2"> Calentador solar de agua de 15 tubos 180 L, 5 personas</h2>
+                    <span class="article__span">Código: 45272 Clave: CALE-15S</span>
+                    <ul class="article__list">
+                        <li class="lists__li">Precio Publico: <span class="lists__tachado">$10,850</span></li>
+                        <li class="lists__li">Precio Mayoreo: $9,250.00 <sup>-5%</sup> </li>
+                    </ul>
+                    <div class="article__enlace">
+                        <a href="#" class="article__a">Leer mas...</a>
+                    </div>
+                </article>
+
+                <article class="article" data-category="CALENTADORES">
+                    <div class="article__img">
+                        <img src="./images/Calentadores/calentadorSolar.jpg" alt="" class="article__img-dimensión">
+                    </div>
+                    <h2 class="article__h2">Calentador solar de agua de 20 tubos 240 L, 7 personas</h2>
+                    <span class="article__span">Código: 45273 Clave: CALE-20S</span>
+                    <ul class="article__list">
+                        <li class="lists__li">Precio Publico: <span class="lists__tachado">$13,550.00</span></li>
+                        <li class="lists__li">Precio Mayoreo: $11,550.00 <sup>-5%</sup> </li>
+                    </ul>
+                    <div class="article__enlace">
+                        <a href="#" class="article__a">Leer mas...</a>
+                    </div>
+                </article>
+                
+                <article class="article" data-category="CALENTADORES">
+                    <div class="article__img">
+                        <img src="./images/Calentadores/45243.jpg" alt="" class="article__img-dimensión">
+                    </div>
+                    <h2 class="article__h2"> Calentadores de depósito, 38 L</h2>
+                    <span class="article__span">Código: 45243 Clave: CALE-38D-N</span>
+                    <ul class="article__list">
+                        <li class="lists__li">Precio Publico: <span class="lists__tachado">$4,150.00</span></li>
+                        <li class="lists__li">Precio Mayoreo: $3,550.00 <sup>-5%</sup> </li>
+                    </ul>
+                    <div class="article__enlace">
+                        <a href="#" class="article__a">Leer mas...</a>
+                    </div>
+                </article>
+                
+                <article class="article" data-category="CALENTADORES">
+                    <div class="article__img">
+                        <img src="./images/Calentadores/45277.jpg" alt="" class="article__img-dimensión">
+                    </div>
+                    <h2 class="article__h2">Calentadores de paso encendido electrónico, 6 L/min</h2>
+                    <span class="article__span">Código: 45277 Clave: CALE-6P-E</span>
+                    <ul class="article__list">
+                        <li class="lists__li">Precio Publico: <span class="lists__tachado">$6,350.00</span></li>
+                        <li class="lists__li">Precio Mayoreo: $5,450.00 <sup>-5%</sup> </li>
+                    </ul>
+                    <div class="article__enlace">
+                        <a href="#" class="article__a">Leer mas...</a>
+                    </div>
+                </article>
+                
+                <article class="article" data-category="CALENTADORES">
+                    <div class="article__img">
+                        <img src="./images/Calentadores/45278.jpg" alt="" class="article__img-dimensión">
+                    </div>
+                    <h2 class="article__h2">Calentadores de paso, encendido electrónico, 9 L/min</h2>
+                    <span class="article__span">Código: 45278 Clave: CALE-9P-E</span>
+                    <ul class="article__list">
+                        <li class="lists__li">Precio Publico: <span class="lists__tachado">$8,050.00</span></li>
+                        <li class="lists__li">Precio Mayoreo: $6,850.00 <sup>-5%</sup> </li>
                     </ul>
                     <div class="article__enlace">
                         <a href="#" class="article__a">Leer mas...</a>
@@ -69,8 +186,6 @@
             </div>
         </div>
     </main>
-
-
 
     <!-- Pie de pagina(Footer) -->
     <footer class="footer">

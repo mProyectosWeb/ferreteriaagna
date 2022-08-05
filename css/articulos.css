@@ -47,9 +47,35 @@
 
 
 
+
 .contenedor{
-    max-width: 1200px;
+    width: 90%;
     margin: auto;
+}
+
+.contenedor__input[type="radio"]{
+    display: none;
+}
+
+.contenedor__categorías{
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contenedor__label{
+    padding: 6px 40px;
+    font-size: 20px;
+    background: #F27405;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contenedor__label:hover{
+    opacity: 0.8;
 }
 
 .artículos{
@@ -66,6 +92,7 @@
     border-radius: 6px;
     overflow: hidden;
     padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .article:hover{
@@ -79,15 +106,13 @@
 
 .article__img-dimensión{
     width: 100%;
-    height: 250px;
 }
 
 .article__h2{
     font-size: 18px;
     margin-top: 15px;
     padding: 0 20px;
-    color: var(--orange);
-    
+    color: var(--orange);    
 }
 
 .article__span{
@@ -120,4 +145,48 @@
     padding: 8px 20px;
     border-radius: 8px;
     color: var(--white);
+}
+
+.article__a:hover{
+    opacity: 0.8;
+}
+
+/** Filtrando los elementos */
+[value="TODOS"]:checked ~ .article[data-category="TODOS"]{
+    display: block;
+}
+[value="CALENTADORES"]:checked ~ .artículos .article:not([data-category="CALENTADORES"]){
+    display: none;
+}
+[value="BOMBAS"]:checked ~ .artículos .article:not([data-category="BOMBAS"]){
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .contenedor__categorías[for="TODOS"],
+[value="CALENTADORES"]:checked ~ .contenedor__categorías[for="CALENTADORES"],
+[value="BOMBAS"]:checked ~ .contenedor__categorías[for="BOMBAS"]{
+    background: #1239A5;
+    color: #fff;
+}
+
+@media screen and (max-width:900px) {
+    .artículos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:610px) {
+    .artículos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:400px) {
+    .contenedor__label{
+        padding: 4px 18px;
+        font-size: 16px;
+        background: #F27405;
+        border-radius: 7px;
+        color: #fff;
+        cursor: pointer;
+    }   
 }
